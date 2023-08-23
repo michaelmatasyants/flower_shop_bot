@@ -1,0 +1,5 @@
+Django==4.2.4
+telebot==0.0.5
+django-phonenumber-field==7.1.0
+phonenumbers==8.13.19
+environs==9.5.0
