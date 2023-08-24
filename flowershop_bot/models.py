@@ -24,6 +24,7 @@ class Flower(models.Model):
     name = models.CharField(verbose_name='Название цветка',
                             max_length=50)
     color = models.CharField(verbose_name='Цвет',
+                             max_length=50,
                              blank=True,
                              null=True)
 
@@ -47,7 +48,7 @@ class Bouqet(models.Model):
     price = models.FloatField(verbose_name='Цена')
     description = models.TextField(verbose_name='Описание букета')
     image = models.ImageField(verbose_name='Фото букета',
-                              upload_to='/images',
+                              upload_to='images',
                               null=True)
 
 
